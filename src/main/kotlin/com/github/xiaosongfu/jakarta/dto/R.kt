@@ -23,8 +23,8 @@ class R<T> private constructor(var code: Int = CODE_SUCCESS, var msg: String = M
 
         // --- --- --- --- --- --- --- --- --- --- --- ---
 
-        private const val CODE_SUCCESS = 200
-        private const val CODE_FAILED = 500
+        const val CODE_SUCCESS = 200
+        const val CODE_FAILED = 500
 
         const val MSG_SUCCESS = "操作成功"
         const val MSG_FAILED = "操作失败"
@@ -32,6 +32,10 @@ class R<T> private constructor(var code: Int = CODE_SUCCESS, var msg: String = M
         // --- --- --- --- --- --- --- --- --- --- --- ---
 
         const val CODE_NOT_FOUND = 404
-        const val CODE_SERVICE_ERROR = 505
+//        const val CODE_SERVICE_ERROR = 505
+
+
+        const val MSG_NOT_FOUND = "请求的资源不存在"
+//        const val MSG_SERVICE_ERROR = "服务错误"
     }
 }
